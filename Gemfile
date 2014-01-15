@@ -19,6 +19,7 @@ gem 'jquery-ui-rails'
 
 group :production do
   gem 'pg'
+  gem 'unicorn'
 end
 
 group :development, :test do
