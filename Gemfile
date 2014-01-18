@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+ruby "2.0.0"
 
 gem 'rails', '4.0.1'
 gem 'sass-rails', '~> 4.0.1'
@@ -19,6 +20,7 @@ gem 'jquery-ui-rails'
 
 group :production do
   gem 'pg'
+  gem 'unicorn'
 end
 
 group :development, :test do
@@ -32,7 +34,7 @@ group :development, :test do
 end
 
 group :travis do
-  gem 'mysql2'
+  # gem 'mysql2' 
 end
 
 if ENV['TRAVIS'] == 'true'
