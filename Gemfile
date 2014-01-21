@@ -18,6 +18,7 @@ gem 'configuration'
 gem 'rails-observers', '~> 0.1.2'
 # gem 'protected_attributes'
 gem 'jquery-ui-rails'
+gem 'newrelic_rpm'
 
 group :production do
   gem 'pg'
