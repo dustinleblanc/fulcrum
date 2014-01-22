@@ -52,8 +52,7 @@ module Fulcrum
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
-    # Do not initialize the whole Rails stack when precompiling assets
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
 
     load Rails.root.join('config','fulcrum_defaults.rb')
     if File.exist?(Rails.root.join('config', 'fulcrum.rb'))
