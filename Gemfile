@@ -5,25 +5,22 @@ ruby "2.0.0"
 gem 'rails', '4.0.1'
 gem 'sass-rails', '~> 4.0.1'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.1'
 gem 'jquery-rails'
-gem 'jbuilder', '~> 1.2'
 gem 'ejs'
 gem "compass-rails", "~> 1.1.2"
 gem "devise", "~> 3.2.0"
 gem 'transitions', '0.1.9', :require => ["transitions", "active_record/transitions"]
-gem 'i18n-js'
 gem 'rails-i18n'
 gem 'configuration'
 gem 'rails-observers', '~> 0.1.2'
-# gem 'protected_attributes'
 gem 'jquery-ui-rails'
 gem 'newrelic_rpm'
-gem 'rails_12factor'
 
 group :production do
   gem 'pg'
   gem 'unicorn'
+  gem 'rails_12factor'
+
 end
 
 group :development, :test do
